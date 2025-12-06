@@ -1,0 +1,18 @@
+# Arquivos de Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Ambiente Virtual Python (Crucial!)
+venv/
+*.pyc
+
+# Django
+__pycache__/
+media/
+
+# Banco de Dados (NUNCA envie para o GitHub)
+db.sqlite3
+
+# Segredos de Configuração
+*.env
+.secret_key

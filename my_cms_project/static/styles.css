@@ -1,0 +1,15 @@
+:root {
+    /* Cor primária para botões, links, backgrounds, etc. */
+    --bs-primary: #1b85b9;
+    
+    /* Uma cor mais clara para hover/elementos de fundo */
+    --bs-primary-rgb: 27, 133, 185; 
+    
+    /* Garante que o texto em cima da cor primária seja branco */
+    --bs-btn-color: #ffffff;
+    --bs-btn-bg: #1b85b9;
+    --secondary: #081270ff;
+    --bs-btn-border-color: #1b85b9;
+    --bs-btn-hover-bg: #156d98; /* Um tom um pouco mais escuro para o hover */
+    --bs-btn-hover-border-color: #156d98;
+}

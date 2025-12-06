@@ -1,0 +1,46 @@
+{% extends 'base.html' %} 
+{% block title %}Lista de Artigos{% endblock title %}
+
+{% block content %}
+    <h1 class="mb-4">Últimos Artigos Publicados</h1>
+    
+    <div class="row">
+        {% for post in posts %}
+            <div class="col-md-12 mb-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            <a href="{% url 'post_detail' slug=post.slug %}" class="text-decoration-none">{{ post.title }}</a>
+                        </h2>
+                        <h6 class="card-subtitle mb-2 text-muted">
+                            Por: {{ post.author.username }} | 
+                            Em: {{ post.created_at|date:"d M Y" }} | 
+                            Categoria: <span class="badge bg-secondary">{{ post.category.name|default:"Geral" }}</span>
+                        </h6>
+                        <p class="card-text">{{ post.content|truncatechars:300 }}</p>
+                        <a href="{% url 'post_detail' slug=post.slug %}" class="btn btn-sm btn-primary">Continuar Lendo →</a>
+                    </div>
+                </div>
+            </div>
+        {% empty %}
+            <p class="alert alert-info">Ainda não há posts publicados.</p>
+        {% endfor %}
+    </div>
+
+    {% if is_paginated %}
+        <nav aria-label="Páginas">
+            <ul class="pagination">
+                {% if page_obj.has_previous %}
+                    <li class="page-item"><a class="page-link" href="?page={{ page_obj.previous_page_number }}">Anterior</a></li>
+                {% endif %}
+                
+                <li class="page-item active"><span class="page-link">{{ page_obj.number }} de {{ page_obj.paginator.num_pages }}</span></li>
+                
+                {% if page_obj.has_next %}
+                    <li class="page-item"><a class="page-link" href="?page={{ page_obj.next_page_number }}">Próxima</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    {% endif %}
+
+{% endblock content %}

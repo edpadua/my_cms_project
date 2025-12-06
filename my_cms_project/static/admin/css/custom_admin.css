@@ -1,0 +1,34 @@
+/* my_cms_project/static/admin/css/custom_admin.css */
+
+/* Define a cor de fundo do cabeçalho */
+#header {
+    background: #1b85b9 !important; /* Seu azul customizado */
+}
+
+/* Estiliza os links no cabeçalho (ex: View Site, Logout) */
+#header a:link, #header a:visited {
+    color: #ffffff; /* Texto branco para contraste */
+}
+
+/* Estiliza os títulos dos apps na página inicial do admin */
+.module h2, .module caption, .inline-group h2 {
+    background: #4a9ec7; /* Um tom ligeiramente mais claro do seu azul para destaque */
+    color: #ffffff;
+}
+
+/* Estiliza os botões principais de ação (Adicionar, Salvar) */
+.submit-row input.default {
+    background-color: #1b85b9;
+    border-color: #1b85b9;
+    color: #ffffff;
+}
+
+/* Garante a cor de fundo em alguns módulos */
+div.breadcrumbs {
+    background: #e9ecef; /* Cor neutra para navegação */
+}
+
+/* Opcional: Estiliza o botão de Excluir */
+.submit-row .deletelink {
+    background: #dc3545; /* Vermelho padrão para exclusão */
+}

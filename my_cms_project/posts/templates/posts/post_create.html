@@ -1,0 +1,39 @@
+{% extends 'base.html' %} 
+
+{% block title %}Novo Artigo{% endblock title %}
+
+{% block content %}
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h1 class="mb-4">Escrever Novo Artigo</h1>
+            
+            <div class="card p-4 shadow-sm">
+                <form method="post">
+                    {% csrf_token %} 
+                    
+                    {% for field in form %}
+                        <div class="mb-3">
+                            <label for="{{ field.id_for_label }}" class="form-label">
+                                {{ field.label }}
+                            </label>
+                            
+                            {{ field|add_class:"form-control" }}
+                            
+                            {% for error in field.errors %}
+                                <div class="form-text text-danger">{{ error }}</div>
+                            {% endfor %}
+
+                        </div>
+                    {% endfor %}
+                    
+                    {{ form.status }}
+
+                    <button type="submit" class="btn btn-success mt-3">
+                        Criar Post (Salvar como Rascunho)
+                    </button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+{% endblock content %}

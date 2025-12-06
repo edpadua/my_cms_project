@@ -1,0 +1,43 @@
+{% extends 'base.html' %} 
+
+{% block title %}{{ post.title }}{% endblock title %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+            
+            <a href="{% url 'post_list' %}" class="btn btn-outline-secondary btn-sm mb-3">← Voltar para a Lista</a>
+
+            {% if user.is_authenticated and user == post.author %}
+                <div class="d-flex justify-content-end mb-3">
+                    <a href="{% url 'post_edit' slug=post.slug %}" class="btn btn-warning btn-sm me-2">
+                        ✏️ Editar Post
+                    </a>
+                    <a href="{% url 'post_delete' slug=post.slug %}" class="btn btn-danger btn-sm">
+                        🗑️ Excluir Post
+                    </a>
+                </div>
+            {% endif %}
+
+            <h1 class="display-5 fw-bold mb-3">{{ post.title }}</h1>
+            
+            <p class="text-muted border-bottom pb-2 mb-4">
+                Publicado por 
+                <strong>{{ post.author.username }}</strong> em 
+                {{ post.created_at|date:"d M Y" }} 
+                {% if post.category %}
+                    | Categoria: <span class="badge bg-info">{{ post.category.name }}</span>
+                {% endif %}
+            </p>
+            
+            <div class="post-content mb-5 lead">
+                {{ post.content|linebreaks }}
+            </div>
+            
+            <p class="text-end">
+                <small class="text-muted">Última atualização: {{ post.updated_at|date:"d/m/Y H:i" }}</small>
+            </p>
+
+        </div>
+    </div>
+{% endblock content %}

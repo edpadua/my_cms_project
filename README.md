@@ -1,9 +1,44 @@
 # my_cms_project
 
-# 🚀 [Nome do Projeto]: CMS Profissional com Django
+# 🚀 CMS Profissional com Django
 
-> Breve frase de impacto que descreve o propósito do projeto.
-> **Ex:** Um Sistema de Gerenciamento de Conteúdo (CMS) completo, construído para demonstrar proficiência em Django, CRUD, segurança e arquitetura MVT.
+> Um Sistema de Gerenciamento de Conteúdo (CMS) completo, construído para demonstrar proficiência em Django, CRUD, segurança e arquitetura MVT.
+
+## 🌟 Recursos Principais
+
+* **CRUD Completo:** Criação, Visualização, Edição e Exclusão de posts via interface front-end.
+* **Controle de Acesso:** Uso de `LoginRequiredMixin` e `UserPassesTestMixin` para garantir que apenas o autor possa editar seu próprio conteúdo.
+* **Estilização Profissional:** Design responsivo implementado com Bootstrap 5.
+* **Templates Customizados:** Sobrescrita de templates do Admin para personalização de cores.
+* **URLs Amigáveis:** Uso de `slugs` para URLs limpas e otimizadas para SEO.
+
+## 🛠️ Tecnologias Utilizadas
+
+| Categoria | Tecnologia | Uso |
+| :--- | :--- | :--- |
+| **Back-end** | **Python** | Linguagem principal de desenvolvimento. |
+| **Framework** | **Django (MVC/MVT)** | Estrutura para desenvolvimento de aplicações web. |
+| **Banco de Dados** | **SQLite3** | Banco de dados padrão para desenvolvimento (pode ser trocado por PostgreSQL em produção). |
+| **Estilização** | **Bootstrap 5** | Framework CSS para responsividade e design. |
+| **Utilitário** | `django-widget-tweaks` | Para estilizar formulários de forma eficiente. |
+
+## 🌟 Recursos Principais
+
+* **CRUD Completo:** Criação, Visualização, Edição e Exclusão de posts via interface front-end.
+* **Controle de Acesso:** Uso de `LoginRequiredMixin` e `UserPassesTestMixin` para garantir que apenas o autor possa editar seu próprio conteúdo.
+* **Estilização Profissional:** Design responsivo implementado com Bootstrap 5.
+* **Templates Customizados:** Sobrescrita de templates do Admin para personalização de cores.
+* **URLs Amigáveis:** Uso de `slugs` para URLs limpas e otimizadas para SEO.
+
+## 🛠️ Tecnologias Utilizadas
+
+| Categoria | Tecnologia | Uso |
+| :--- | :--- | :--- |
+| **Back-end** | **Python** | Linguagem principal de desenvolvimento. |
+| **Framework** | **Django (MVC/MVT)** | Estrutura para desenvolvimento de aplicações web. |
+| **Banco de Dados** | **SQLite3** | Banco de dados padrão para desenvolvimento (pode ser trocado por PostgreSQL em produção). |
+| **Estilização** | **Bootstrap 5** | Framework CSS para responsividade e design. |
+| **Utilitário** | `django-widget-tweaks` | Para estilizar formulários de forma eficiente. |
 
 ## 🌟 Recursos Principais
 
@@ -24,58 +59,6 @@
 | **Utilitário** | `django-widget-tweaks` | Para estilizar formulários de forma eficiente. |
 
 ## 📁 Estrutura de Pastas
-
-Uma breve explicação da arquitetura do seu código (opcional, mas útil):# 🚀 [Nome do Projeto]: CMS Profissional com Django
-
-> Breve frase de impacto que descreve o propósito do projeto.
-> **Ex:** Um Sistema de Gerenciamento de Conteúdo (CMS) completo, construído para demonstrar proficiência em Django, CRUD, segurança e arquitetura MVT.
-
-## 🌟 Recursos Principais
-
-* **CRUD Completo:** Criação, Visualização, Edição e Exclusão de posts via interface front-end.
-* **Controle de Acesso:** Uso de `LoginRequiredMixin` e `UserPassesTestMixin` para garantir que apenas o autor possa editar seu próprio conteúdo.
-* **Estilização Profissional:** Design responsivo implementado com Bootstrap 5.
-* **Templates Customizados:** Sobrescrita de templates do Admin para personalização de cores.
-* **URLs Amigáveis:** Uso de `slugs` para URLs limpas e otimizadas para SEO.
-
-## 🛠️ Tecnologias Utilizadas
-
-| Categoria | Tecnologia | Uso |
-| :--- | :--- | :--- |
-| **Back-end** | **Python** | Linguagem principal de desenvolvimento. |
-| **Framework** | **Django (MVC/MVT)** | Estrutura para desenvolvimento de aplicações web. |
-| **Banco de Dados** | **SQLite3** | Banco de dados padrão para desenvolvimento (pode ser trocado por PostgreSQL em produção). |
-| **Estilização** | **Bootstrap 5** | Framework CSS para responsividade e design. |
-| **Utilitário** | `django-widget-tweaks` | Para estilizar formulários de forma eficiente. |
-
-## 📁 Estrutura de Pastas
-
-Uma breve explicação da arquitetura do seu código (opcional, mas útil):# 🚀 [Nome do Projeto]: CMS Profissional com Django
-
-> Breve frase de impacto que descreve o propósito do projeto.
-> **Ex:** Um Sistema de Gerenciamento de Conteúdo (CMS) completo, construído para demonstrar proficiência em Django, CRUD, segurança e arquitetura MVT.
-
-## 🌟 Recursos Principais
-
-* **CRUD Completo:** Criação, Visualização, Edição e Exclusão de posts via interface front-end.
-* **Controle de Acesso:** Uso de `LoginRequiredMixin` e `UserPassesTestMixin` para garantir que apenas o autor possa editar seu próprio conteúdo.
-* **Estilização Profissional:** Design responsivo implementado com Bootstrap 5.
-* **Templates Customizados:** Sobrescrita de templates do Admin para personalização de cores.
-* **URLs Amigáveis:** Uso de `slugs` para URLs limpas e otimizadas para SEO.
-
-## 🛠️ Tecnologias Utilizadas
-
-| Categoria | Tecnologia | Uso |
-| :--- | :--- | :--- |
-| **Back-end** | **Python** | Linguagem principal de desenvolvimento. |
-| **Framework** | **Django (MVC/MVT)** | Estrutura para desenvolvimento de aplicações web. |
-| **Banco de Dados** | **SQLite3** | Banco de dados padrão para desenvolvimento (pode ser trocado por PostgreSQL em produção). |
-| **Estilização** | **Bootstrap 5** | Framework CSS para responsividade e design. |
-| **Utilitário** | `django-widget-tweaks` | Para estilizar formulários de forma eficiente. |
-
-## 📁 Estrutura de Pastas
-
-Uma breve explicação da arquitetura do seu código (opcional, mas útil):
 
 my_cms_project/ ├── my_cms_project/ # Configurações globais ├── posts/ # O aplicativo principal (Models, Views, URLs, Forms) │ ├── models.py # Modelagem de Post e Category │ ├── views.py # Views baseadas em classes (ListView, DetailView, etc.) │ ├── urls.py # Mapeamento de rotas do app │ └── templates/ # HTMLs customizados ├── templates/ # Templates Globais (base.html, admin/base.html) └── static/ # CSS Customizado (styles.css, admin/css/custom_admin.css)
 
